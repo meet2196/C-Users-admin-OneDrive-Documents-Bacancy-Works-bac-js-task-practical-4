@@ -10,10 +10,10 @@
     <script src="./js/script.js"></script>
 </head>
 <body onload="fetchData()">
-    <div class="container">
+    <div>
         <h2 style="text-align:center">Employee Registration Form</h2>
         <form onsubmit="submitForm(event)" class="was-validated">
-            <div class="mb-3 mt-3">
+            <div>
                 <label for="selectTitle" class="form-label">Select title:</label>
                 <select class="form-select" id="selectTitle" required>
                     <option selected value="Mr">Mr</option>
@@ -22,66 +22,66 @@
                 </select>
             </div>
             <div>
-                <div class="row">
+                <div>
                     <div>
                         <label for="firstName" class="form-label">First name:</label>
                         <input type="text" pattern="[a-zA-Z]{1,}[']{0,1}[a-zA-Z]{1,}" title="Please enter valid name with only alphabets. Space is not allowed." id="firstName" class="form-control" placeholder="First name" required>
                     </div>
-                    <div class="nameField col-md-4 col-sm-6">
+                    <div>
                         <label for="middleName" class="form-label">Middle name:</label>
                         <input type="text" pattern="[a-zA-Z]{1,}[']{0,1}[a-zA-Z]{1,}" title="Please enter valid name with only alphabets. Space is not allowed." id="middleName" class="form-control" placeholder="Middle name" required>
                     </div>
-                    <div class="nameField col-md-4 col-sm-12">
-                        <label for="lastName" class="form-label">Last name:</label>
+                    <div>
+                        <label for="lastName">Last name:</label>
                         <input type="text" pattern="[a-zA-Z]{1,}[']{0,1}[a-zA-Z]{1,}" title="Please enter valid name with only alphabets. Space is not allowed." id="lastName" class="form-control" placeholder="Last name" required>
                     </div>
                 </div>
             </div>
-            <div class="mb-3 mt-3">
-                <input type="radio" class="form-check-input" id="radioMale" name="genderRadio" value="Male" checked required> Male
-                <label class="form-check-label" for="radioMale"></label>
-                <input type="radio" class="form-check-input" id="radioFemale" name="genderRadio" value="Female" required> Female
-                <label class="form-check-label" for="radioFemale"></label>
+            <div>
+                <input type="radio" id="radioMale"  value="Male" checked required> Male
+                <label  for="radioMale"></label>
+                <input type="radio" id="radioFemale" value="Female" required> Female
+                <label for="radioFemale"></label>
             </div>
-            <div class="mb-3 mt-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" pattern="[a-zA-Z0-9]{1,}[a-zA-Z0-9.-_]{1,}@[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}[.]{0,1}[a-zA-Z]{0,}" title="Please enter valid email address." id="email" class="form-control" placeholder="Email" required>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" pattern="[a-zA-Z0-9]{1,}[a-zA-Z0-9.-_]{1,}@[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}[.]{0,1}[a-zA-Z]{0,}"  id="email" >
             </div>
             <div class="mb-3 mt-3">
                 <label for="contact" class="form-label">Contact Number:</label>
-                <input type="text" pattern="[0-9]{1,}" title="Please enter valid contact number." id="contact" class="form-control" placeholder="Contact number" minlength="10" maxlength="10" required>
+                <input type="text" pattern="[0-9]{1,}"  id="contact" minlength="10" maxlength="10">
             </div>
-            <div class="mb-3 mt-3">
-                <div class="row">
-                    <div class="nameField col-md-6">
-                        <label for="houseNo" class="form-label">Block no. / House no. / House number:</label>
-                        <input type="text" id="houseNo" class="form-control" placeholder="House no./Block no./House name" required>
+            <div>
+                <div>
+                    <div>
+                        <label for="houseNo">Block no. / House no. / House number:</label>
+                        <input type="text" id="houseNo" placeholder="House no./Block no./House name">
                     </div>
                     <div class="nameField col-md-6">
                         <label for="landmark" class="form-label">Landmark:</label>
-                        <input type="text" id="landmark" class="form-control" placeholder="Landmark" required>
+                        <input type="text" id="landmark" class="form-control" placeholder="Landmark">
                     </div>
                 </div>
-                <div class="addressLineMargin row">
-                    <div class="nameField col-md-6">
-                        <label for="addressLine1" class="form-label">Address line-1:</label>
-                        <input type="text" id="addressLine1" class="form-control" placeholder="Address line 1" required>
+                <div>
+                    <div>
+                        <label for="addressLine1">Address line-1:</label>
+                        <input type="text" id="addressLine1"  placeholder="Address line 1">
                     </div>
-                    <div class="nameField col-md-6">
-                        <label for="addressLine2" class="form-label">Address line-2:</label>
-                        <input type="text" id="addressLine2" class="form-control" placeholder="Address line 2" required>
+                    <div>
+                        <label for="addressLine2">Address line-2:</label>
+                        <input type="text" id="addressLine2" placeholder="Address line 2">
                     </div>
                 </div>
-                <div class="addressLineMargin row">
-                    <div class="nameField col-md-6">
-                        <label for="country" class="form-label">Country:</label>
-                        <select class="form-select" id="country" required>
+                <div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" required>
                             <option selected value="India">India</option>
                             <option value="USA" disabled>USA</option>
-                            <option value="Canada" disabled>Canada</option>
+                            <option value="Germany" disabled>Germany</option>
                         </select>
                     </div>
-                    <div class="nameField col-md-6">
+                    <div>
                         <label for="state" class="form-label">State:</label>
                         <select class="form-select" id="state" required>
                             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -122,14 +122,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="addressLineMargin row">
-                    <div class="nameField col-md-6">
-                        <label for="city" class="form-label">City:</label>
-                        <input type="text" id="city" class="form-control" placeholder="City" required>
+                <div>
+                    <div>
+                        <label for="city">City:</label>
+                        <input type="text" id="city"  placeholder="City" >
                     </div>
                     <div class="nameField col-md-6">
                         <label for="pincode" class="form-label">Pincode:</label>
-                        <input type="number" id="pincode" class="form-control" placeholder="Pincode" required>
+                        <input type="number" id="pincode"  placeholder="Pincode">
                     </div>
                 </div>
             </div>
